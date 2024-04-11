@@ -178,6 +178,8 @@ color: red !important;
         .navBItem{
             margin-right: 100px;
             max-width: 250px;
+            position: relative;
+            left: 180px;
         }
 
         .navBItem>span{

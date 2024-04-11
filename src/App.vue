@@ -12,45 +12,49 @@ import Footer from './components/FooterVue.vue'
   </div>
 </template>
 
-<style >
- 
 
- @font-face {
-  font-family: 'Thin';
-  src:url('./assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Thin.ttf'),
    
+<style>
+@font-face {
+  font-family: 'HarmonyOS_Sans_SC';
+  src: url('./assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Regular.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Thin';
+  src: url('./assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Thin.ttf') format('truetype');
+}
+
 @font-face {
   font-family: 'Light';
-  src:url('./assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Light.ttf'),
-   
+  src: url('./assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Regular';
-  src:url('./assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Regular.ttf'),
-   
+  src: url('./assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Bold';
-  src:url('./assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Bold.ttf'),
-   
+  src: url('./assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Bold.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'Medium';
-  src:url('./assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.ttf'),
-   
+  src: url('./assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.ttf') format('truetype');
 }
-*{
+
+body {
+  font-family: 'HarmonyOS_Sans_SC';
+}
+
+* {
   padding: 0;
   margin: 0;
-  font-family: 'Thin';
- }
+}
 
- a{
+a {
   text-decoration: none;
- }
- 
-
+}
 </style>

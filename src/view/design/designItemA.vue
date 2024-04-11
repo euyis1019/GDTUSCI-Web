@@ -183,7 +183,7 @@
 .titleH3 {
     font-size: 64px;
     font-family: "Regular";
-    margin: 50px 0;
+    margin: 48px 0;
     font-weight: 300;
 }
 
@@ -302,7 +302,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 50px 8% 100px;
+    padding: 48px 8% 100px;
     box-sizing: border-box;
 }
 

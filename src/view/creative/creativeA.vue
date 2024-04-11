@@ -120,7 +120,7 @@ export default {
 .titleH3{
     font-size: 64px;
     font-family: "Regular";
-    margin: 50px 0;
+    margin: 48px;
     font-weight: 300;
 }
 

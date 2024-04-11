@@ -71,6 +71,10 @@ export default {
 }
 </script>
 
+
+
+
+
 <style scoped>
 .banner {
     width: 100%;

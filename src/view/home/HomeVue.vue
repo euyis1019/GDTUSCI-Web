@@ -72,27 +72,29 @@
                     @mouseout="changeTextColor($event, false)" src="./images/item1.png" alt="" srcset=""></div>
             <div class="insightsText">
                 <h5>材料的探索与实践_混凝土材料的设计应用</h5>
-                <p @click="$router.push('')">Design Application of Concrete Materials Exploration and Practice of
+                <p class="insightsP" @click="$router.push('')">Design Application of Concrete Materials Exploration and Practice of
                     Materials</p>
                 <h6>2024-01</h6>
             </div>
         </div>
+        <hr class="division-line">
         <div class="insightsItem">
             <div class="insightsImg"><img @mouseover="changeTextColor($event, true)"
                     @mouseout="changeTextColor($event, false)" src="./images/item1.png" alt="" srcset=""></div>
             <div class="insightsText">
                 <h5>材料的探索与实践_混凝土材料的设计应用</h5>
-                <p @click="$router.push('')">Design Application of Concrete Materials Exploration and Practice of
+                <p class="insightsP" @click="$router.push('')">Design Application of Concrete Materials Exploration and Practice of
                     Materials</p>
                 <h6>2024-01</h6>
             </div>
         </div>
+        <hr class="division-line">
         <div class="insightsItem">
             <div class="insightsImg"><img @mouseover="changeTextColor($event, true)"
                     @mouseout="changeTextColor($event, false)" src="./images/item1.png" alt="" srcset=""></div>
             <div class="insightsText">
                 <h5>材料的探索与实践_混凝土材料的设计应用</h5>
-                <p @click="$router.push('')">Design Application of Concrete Materials Exploration and Practice of
+                <p class="insightsP" @click="$router.push('')">Design Application of Concrete Materials Exploration and Practice of
                     Materials</p>
                 <h6>2024-01</h6>
             </div>
@@ -115,9 +117,14 @@ import 'swiper/swiper-bundle.css';
 function changeTextColor(event, isHover) {
     const insightsText = event.target.closest('.insightsItem').querySelector('.insightsText p');
     if (isHover) {
-        insightsText.classList.add('redText');
+        insightsText.style.textDecoration = 'none';
+        insightsText.style.backgroundImage = 'linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322)';
+        insightsText.style.backgroundSize = '100% 15px, 100% 15px'; // Set both gradients to 100%
+        insightsText.style.backgroundPosition = '100% 100%, 0 100%';
+        insightsText.style.backgroundRepeat = 'no-repeat';
+        insightsText.style.transition = 'background-size 0.3s linear';
     } else {
-        insightsText.classList.remove('redText');
+        insightsText.style.backgroundSize = '100% 15px, 0 15px'; // Reset the second gradient to 0
     }
 }
 </script>
@@ -132,10 +139,29 @@ function changeTextColor(event, isHover) {
     background-color: white !important;
 }
 
-:is(.proImgB, .proImgA):hover>.proText h3,
-.proText h3:hover {
-    color: red;
+/* 伪类选择器 */
+.product-img-box img {
+  transition: transform 0.3s ease-in-out;
 }
+
+.product-img-box img:hover {
+  transform: scale(1.2);
+}
+
+
+.insightsImg img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.insightsImg img:hover {
+    transform: scale(1.2);
+}
+
+.h5:hover ~ img {
+    transform: scale(1.2);
+
+}
+
 
 .swiper-pagination-bullet {
     width: 20px !important;
@@ -145,8 +171,14 @@ function changeTextColor(event, isHover) {
 </style>
 
 <style scoped>
+/* 全局样式 */
 .redText {
-    color: red !important;
+    text-decoration: none;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
+    background-size: 100% 15px, 0 15px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s linear;
 }
 
 
@@ -237,9 +269,6 @@ function changeTextColor(event, isHover) {
 
 }
 
-.productItem>div img:hover {
-    transform: scale(1.1);
-}
 
 .proText {
     z-index: 999;
@@ -257,17 +286,27 @@ function changeTextColor(event, isHover) {
 }
 
 .proText h3 {
-    font-size: 36px;
-    line-height: 32px;
     color: rgba(0, 0, 0, 0.65);
-    font-family: 'Light';
+    font-family: HarmonyOS Sans SC;
+    font-size: 32px;
     font-weight: 300;
-    cursor: pointer;
+    line-height: 32px;
+    letter-spacing: 0%;
+    display: inline;
+    text-decoration: none;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
+    background-size: 100% 15px, 0 15px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s linear;
+
+
+
 
 }
 
 .proText h3:hover {
-    color: red;
+    background-size: 0 15px, 100% 15px;
 }
 
 .productBtn {
@@ -301,6 +340,8 @@ function changeTextColor(event, isHover) {
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
+    margin-top: 10px;
+    flex-direction: row-reverse;
 }
 
 .insightsText {
@@ -308,14 +349,43 @@ function changeTextColor(event, isHover) {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    margin-top: 10px;
+}
+
+.insightsP {
+    margin-top: -40px;
+    color: rgba(0, 0, 0, 0.95);
+    opacity: 0.65;
+    font-family: HarmonyOS Sans SC;
+    font-size: 28px;
+    font-weight: 250;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+
 }
 
 .insightsText h5 {
-    font-size: 32px;
-    font-weight: 300;
-
     color: rgba(0, 0, 0, 0.65);
-    font-family: 'Regular';
+    font-family: HarmonyOS Sans SC;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: justify;
+    display: inline;
+    text-decoration: none;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
+    background-size: 100% 15px, 0 15px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s linear;
+
+}
+
+.insightsText h5:hover {
+    background-size: 0 15px, 100% 15px;
 }
 
 .insightsText p {
@@ -324,20 +394,33 @@ function changeTextColor(event, isHover) {
     line-height: 56px;
     color: rgba(0, 0, 0, 0.95);
     cursor: pointer;
-
+    display: inline;
+    text-decoration: none;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
+    background-size: 100% 15px, 0 15px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s linear;
 }
 
 .insightsText p:hover {
-    color: red;
-
+    background-size: 0 15px, 100% 15px;
 }
 
 .insightsText h6 {
     font-size: 32px;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.65);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
+}
+
+.division-line {
+width: 1370px;
+margin-top: 20px;
+margin-bottom: 20px;
+left: 274px;
+border: 0.4px solid rgba(0, 0, 0, 0.5);
 }
 
 
@@ -350,13 +433,14 @@ function changeTextColor(event, isHover) {
 .insightsImg img {
     width: 100%;
     height: 100%;
-    cursor: pointer;
-    transition: all 1s linear;
 }
 
-.insightsImg img:hover {
+.insightsImg img:hover,
+.insightsText:hover+.insightsImg img {
     transform: scale(1.1);
 }
+
+
 
 /*  */
 .more {
@@ -394,16 +478,57 @@ function changeTextColor(event, isHover) {
     .insights {
         width: 80%;
     }
-}
 
-@media screen and (max-width: 700px) {
+
     .title {
         font-size: 30px;
         margin-bottom: 30px;
     }
+
+    .product-img-box {
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .proText{
+        height: 200px;
+    }
+    .h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .h5 {
+        font-size: 25px;
+        margin-bottom: 20px;
+        min-height: auto;
+    }
+
+    .h6 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+
+    .insightsP {
+        font-size: 20px;
+        line-height: 40px;
+        margin-top: 0;
+    }
+
+    .division-line {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        left: 0;
+    }
 }
 
-@media screen and (max-width: 500px) {
+
+
+
+
+@media screen and (max-width: 1200px) {
     .productItem {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
@@ -496,6 +621,9 @@ function changeTextColor(event, isHover) {
         height: auto;
     }
 
+    .proText {
+        height: auto;
+    }
 
     .proText p {
         font-size: 14px;
@@ -517,3 +645,6 @@ function changeTextColor(event, isHover) {
 
 }
 </style>
+
+
+
