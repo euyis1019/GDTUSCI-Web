@@ -62,6 +62,6 @@ function changeTextColor(event, isHover) {
 
 
 <style>
-@import 'src/assets/css/item.css';
+@import '@/assets/css/item.css';
 </style>
 
