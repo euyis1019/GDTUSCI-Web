@@ -60,13 +60,37 @@
 
 </template>
 
-<script>
-export default {
+<script setup>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
+import 'swiper/swiper-bundle.css';
+
+function changeTextColor(event, isHover) {
+    const insightsText = event.target.closest('.insightsItem').querySelector('.insightsText p');
+    if (isHover) {
+        insightsText.style.textDecoration = 'none';
+        insightsText.style.backgroundImage = 'linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322)';
+        insightsText.style.backgroundSize = '100% 15px, 100% 15px'; // Set both gradients to 100%
+        insightsText.style.backgroundPosition = '100% 100%, 0 100%';
+        insightsText.style.backgroundRepeat = 'no-repeat';
+        insightsText.style.transition = 'background-size 0.3s linear';
+    } else {
+        insightsText.style.backgroundSize = '100% 15px, 0 15px'; // Reset the second gradient to 0
+    }
 }
 </script>
 
 <style scoped>
+/* 全局样式 */
+.redText {
+    text-decoration: none;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
+    background-size: 100% 15px, 0 15px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s linear;
+}
 .product-img-box {
     overflow: hidden;
     height: 440px;
@@ -140,16 +164,23 @@ export default {
 }
 
 .proText h3 {
-    font-size: 36px;
-    line-height: 32px;
     color: rgba(0, 0, 0, 0.65);
-    font-family: "Light";
+    font-family: HarmonyOS Sans SC;
+    font-size: 32px;
     font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0%;
+    display: inline;
+    text-decoration: none;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
+    background-size: 100% 15px, 0 15px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s linear;
 }
 
-:is(.proImgB, .proImgA):hover>.proText h3,
 .proText h3:hover {
-    color: red;
+    background-size: 0 15px, 100% 15px;
 }
 
 .productBtn {
