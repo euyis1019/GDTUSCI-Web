@@ -1,5 +1,4 @@
-# Guangdong South China Industrial Design Institute Official Website
-# 广东华南工业设计院官方网站
+# Guangdong South China Industrial Design Institute Official Website 广东华南工业设计院官方网站
 
 This is a static official website created for the Guangdong South China Industrial Design Institute. The website aims to showcase the institute's overview, services, project cases, and contact information.
 
