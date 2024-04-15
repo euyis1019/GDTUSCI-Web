@@ -145,7 +145,7 @@ function changeTextColor(event, isHover) {
 }
 
 .product-img-box img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 
@@ -154,11 +154,11 @@ function changeTextColor(event, isHover) {
 }
 
 .insightsImg img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .h5:hover ~ img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 
 }
 
@@ -264,7 +264,7 @@ function changeTextColor(event, isHover) {
 .productItem>div img {
     width: 100%;
     height: 440px;
-    transition: all 1s linear;
+    transition: all 0.2s linear;
     cursor: pointer;
 
 }
