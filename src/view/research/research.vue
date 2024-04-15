@@ -7,14 +7,13 @@
 
     <div class="insights">
         <div class="insightsItem">
-            <div class="insightsText" @mouseover="highlight" @mouseout="unhighlight">
+            <div class="insightsText">
                 <h5 @click="$router.push('/researchA')">材料的探索与实践_混凝土材料的设计应用</h5>
                 <p class="insightsP" @click="$router.push('/researchA')">Design Application of Concrete Materials Exploration and Practice of Materials</p>
                 <h6>2024-01</h6>
             </div>
             <div class="insightsImg"><router-link to="/researchA">
-                    <img @mouseover="changeTextColor($event, true)" @mouseout="changeTextColor($event, false)"
-                        src="./images/banner.png" class="insights-img-self" alt="" srcset=""></router-link></div>
+                    <img src="./images/banner.png" class="insights-img-self" alt="" srcset=""></router-link></div>
         </div>
         <div>
             <hr class="division-line">
@@ -25,8 +24,7 @@
                 <p class="insightsP" @click="$router.push('/researchB')">Design Application of Concrete Materials Exploration and Practice of Materials</p>
                 <h6>2024-01</h6>
             </div>
-            <div class="insightsImg"><router-link to="/researchB"><img @mouseover="changeTextColor($event, true)"
-                        @mouseout="changeTextColor($event, false)" class="insights-img-self" src="./images/banner.png"
+            <div class="insightsImg"><router-link to="/researchB"><img class="insights-img-self" src="./images/banner.png"
                         alt="" srcset=""></router-link></div>
         </div>
         <div>
@@ -38,8 +36,7 @@
                 <p class="insightsP" @click="$router.push('/researchC')">Design Application of Concrete Materials Exploration and Practice of Materials</p>
                 <h6>2024-01</h6>
             </div>
-            <div class="insightsImg"><router-link to="/researchC"><img @mouseover="changeTextColor($event, true)"
-                        @mouseout="changeTextColor($event, false)" class="insights-img-self" src="./images/banner.png"
+            <div class="insightsImg"><router-link to="/researchC"><img class="insights-img-self" src="./images/banner.png"
                         alt="" srcset=""></router-link></div>
         </div>
     </div>
@@ -54,5 +51,3 @@
 <style>
 @import '@/assets/css/item.css';
 </style>
-
-
