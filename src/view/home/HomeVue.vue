@@ -105,7 +105,13 @@
 
 </template>
 
+<script setup>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
+import 'swiper/swiper-bundle.css';
+
+</script>
 
 <style>
 .product-img-box {
