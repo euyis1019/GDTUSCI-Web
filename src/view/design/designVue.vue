@@ -148,7 +148,7 @@ function changeTextColor(event, isHover) {
 .productItem>div img {
     width: 100%;
     height: 440px;
-    transition: all 1s linear;
+    transition: all 0.3s linear;
 }
 
 .productItem>div img:hover {
