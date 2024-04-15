@@ -108,26 +108,7 @@
 
 </template>
 
-<script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
-import 'swiper/swiper-bundle.css';
-
-function changeTextColor(event, isHover) {
-    const insightsText = event.target.closest('.insightsItem').querySelector('.insightsText p');
-    if (isHover) {
-        insightsText.style.textDecoration = 'none';
-        insightsText.style.backgroundImage = 'linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322)';
-        insightsText.style.backgroundSize = '100% 15px, 100% 15px'; // Set both gradients to 100%
-        insightsText.style.backgroundPosition = '100% 100%, 0 100%';
-        insightsText.style.backgroundRepeat = 'no-repeat';
-        insightsText.style.transition = 'background-size 0.3s linear';
-    } else {
-        insightsText.style.backgroundSize = '100% 15px, 0 15px'; // Reset the second gradient to 0
-    }
-}
-</script>
 
 <style>
 .product-img-box {
