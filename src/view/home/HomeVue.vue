@@ -172,14 +172,6 @@ function changeTextColor(event, isHover) {
 
 <style scoped>
 /* 全局样式 */
-.redText {
-    text-decoration: none;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
-    background-size: 100% 15px, 0 15px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.3s linear;
-}
 
 
 .lb {
@@ -366,6 +358,42 @@ function changeTextColor(event, isHover) {
 
 }
 
+
+/* 当 .insightsText 被悬停时, h5 和 p 元素应用高亮样式 */
+
+.insightsText h5,
+.insightsText p {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
+    background-size: 100% calc(2.4em + 1px);
+    background-position: 100% 100%, 100% 100%;
+    background-repeat: repeat-y;
+    transition: background-size 0.3s linear;
+
+}
+
+
+
+.insightsText:hover h5,
+.insightsText:hover p {
+    background-size: 0 15px, 100% 15px;
+}
+
+
+
+.insightsP {
+    margin-top: -40px;
+    color: rgba(0, 0, 0, 0.95);
+    opacity: 0.65;
+    font-family: HarmonyOS Sans SC;
+    font-size: 28px;
+    font-weight: 250;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+
+}
+
 .insightsText h5 {
     color: rgba(0, 0, 0, 0.65);
     font-family: HarmonyOS Sans SC;
@@ -376,17 +404,10 @@ function changeTextColor(event, isHover) {
     text-align: justify;
     display: inline;
     text-decoration: none;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
-    background-size: 100% 15px, 0 15px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.3s linear;
 
 }
 
-.insightsText h5:hover {
-    background-size: 0 15px, 100% 15px;
-}
+
 
 .insightsText p {
     font-weight: 300;
@@ -396,15 +417,7 @@ function changeTextColor(event, isHover) {
     cursor: pointer;
     display: inline;
     text-decoration: none;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
-    background-size: 100% 15px, 0 15px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.3s linear;
-}
 
-.insightsText p:hover {
-    background-size: 0 15px, 100% 15px;
 }
 
 .insightsText h6 {
