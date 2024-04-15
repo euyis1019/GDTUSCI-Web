@@ -6,22 +6,7 @@
     transition: all 0.3s linear;
 }
 
-.redText {
-    color: rgba(0, 0, 0, 0.65) !important;
-    font-family: HarmonyOS Sans SC;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: justify;
-    display: inline;
-    text-decoration: none;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
-    background-size: 100% 15px, 0 15px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.3s linear;
-}
+
 
 .designTitle {
     width: 80%;
@@ -69,7 +54,30 @@
     justify-content: space-between;
     flex-direction: column;
     margin-top: 10px;
+
+
 }
+
+/* 当 .insightsText 被悬停时, h5 和 p 元素应用高亮样式 */
+
+.insightsText h5,
+.insightsText p {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
+    background-size: 100% calc(2.4em + 1px);
+    background-position: 100% 100%, 100% 100%;
+    background-repeat: repeat-y;
+    transition: background-size 0.3s linear;
+
+}
+
+
+
+.insightsText:hover h5,
+.insightsText:hover p {
+    background-size: 0 15px, 100% 15px;
+}
+
+
 
 .insightsP {
     margin-top: -40px;
@@ -95,17 +103,10 @@
     text-align: justify;
     display: inline;
     text-decoration: none;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
-    background-size: 100% 15px, 0 15px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.3s linear;
 
 }
 
-.insightsText h5:hover {
-    background-size: 0 15px, 100% 15px;
-}
+
 
 .insightsText p {
     font-weight: 300;
@@ -115,16 +116,9 @@
     cursor: pointer;
     display: inline;
     text-decoration: none;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
-    background-size: 100% 15px, 0 15px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.3s linear;
+
 }
 
-.insightsText p:hover {
-    background-size: 0 15px, 100% 15px;
-}
 
 .insightsText h6 {
     font-size: 32px;

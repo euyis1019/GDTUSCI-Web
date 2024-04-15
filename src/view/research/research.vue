@@ -7,10 +7,9 @@
 
     <div class="insights">
         <div class="insightsItem">
-            <div class="insightsText">
-                <h5>材料的探索与实践_混凝土材料的设计应用</h5>
-                <p class="insightsP"  @click="$router.push('/researchA')">Design Application of Concrete Materials Exploration and Practice
-                    of Materials</p>
+            <div class="insightsText" @mouseover="highlight" @mouseout="unhighlight">
+                <h5 @click="$router.push('/researchA')">材料的探索与实践_混凝土材料的设计应用</h5>
+                <p class="insightsP" @click="$router.push('/researchA')">Design Application of Concrete Materials Exploration and Practice of Materials</p>
                 <h6>2024-01</h6>
             </div>
             <div class="insightsImg"><router-link to="/researchA">
@@ -22,9 +21,8 @@
         </div>
         <div class="insightsItem">
             <div class="insightsText">
-                <h5>材料的探索与实践_混凝土材料的设计应用</h5>
-                <p class="insightsP"  @click="$router.push('/researchB')">Design Application of Concrete Materials Exploration and Practice
-                    of Materials</p>
+                <h5 @click="$router.push('/researchB')">材料的探索与实践_混凝土材料的设计应用</h5>
+                <p class="insightsP" @click="$router.push('/researchB')">Design Application of Concrete Materials Exploration and Practice of Materials</p>
                 <h6>2024-01</h6>
             </div>
             <div class="insightsImg"><router-link to="/researchB"><img @mouseover="changeTextColor($event, true)"
@@ -36,15 +34,13 @@
         </div>
         <div class="insightsItem">
             <div class="insightsText">
-                <h5>材料的探索与实践_混凝土材料的设计应用</h5>
-                <p class="insightsP"  @click="$router.push('/researchC')">Design Application of Concrete Materials Exploration and Practice
-                    of Materials</p>
+                <h5 @click="$router.push('/researchC')">材料的探索与实践_混凝土材料的设计应用</h5>
+                <p class="insightsP" @click="$router.push('/researchC')">Design Application of Concrete Materials Exploration and Practice of Materials</p>
                 <h6>2024-01</h6>
             </div>
             <div class="insightsImg"><router-link to="/researchC"><img @mouseover="changeTextColor($event, true)"
                         @mouseout="changeTextColor($event, false)" class="insights-img-self" src="./images/banner.png"
                         alt="" srcset=""></router-link></div>
-
         </div>
     </div>
     <div class="productBtn">
@@ -54,16 +50,6 @@
     </div>
 </template>
 
-<script setup>
-function changeTextColor(event, isHover) {
-    const insightsText = event.target.closest('.insightsItem').querySelector('.insightsText p');
-    if (isHover) {
-        insightsText.classList.add('redText');
-    } else {
-        insightsText.classList.remove('redText');
-    }
-}
-</script>
 
 <style>
 @import '@/assets/css/item.css';
