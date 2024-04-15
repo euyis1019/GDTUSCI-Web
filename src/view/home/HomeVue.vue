@@ -68,8 +68,7 @@
     </div>
     <div class="insights">
         <div class="insightsItem">
-            <div class="insightsImg"><img @mouseover="changeTextColor($event, true)"
-                    @mouseout="changeTextColor($event, false)" src="./images/item1.png" alt="" srcset=""></div>
+            <div class="insightsImg"><img src="./images/item1.png" alt="" srcset=""></div>
             <div class="insightsText">
                 <h5>材料的探索与实践_混凝土材料的设计应用</h5>
                 <p class="insightsP" @click="$router.push('')">Design Application of Concrete Materials Exploration and Practice of
@@ -79,8 +78,7 @@
         </div>
         <hr class="division-line">
         <div class="insightsItem">
-            <div class="insightsImg"><img @mouseover="changeTextColor($event, true)"
-                    @mouseout="changeTextColor($event, false)" src="./images/item1.png" alt="" srcset=""></div>
+            <div class="insightsImg"><img src="./images/item1.png" alt="" srcset=""></div>
             <div class="insightsText">
                 <h5>材料的探索与实践_混凝土材料的设计应用</h5>
                 <p class="insightsP" @click="$router.push('')">Design Application of Concrete Materials Exploration and Practice of
@@ -90,8 +88,7 @@
         </div>
         <hr class="division-line">
         <div class="insightsItem">
-            <div class="insightsImg"><img @mouseover="changeTextColor($event, true)"
-                    @mouseout="changeTextColor($event, false)" src="./images/item1.png" alt="" srcset=""></div>
+            <div class="insightsImg"><img src="./images/item1.png" alt="" srcset=""></div>
             <div class="insightsText">
                 <h5>材料的探索与实践_混凝土材料的设计应用</h5>
                 <p class="insightsP" @click="$router.push('')">Design Application of Concrete Materials Exploration and Practice of
