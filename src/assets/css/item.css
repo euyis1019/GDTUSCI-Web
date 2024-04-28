@@ -54,9 +54,8 @@
     justify-content: space-between;
     flex-direction: column;
     margin-top: 10px;
-
-
 }
+
 
 /* 当 .insightsText 被悬停时, h5 和 p 元素应用高亮样式 */
 
@@ -78,7 +77,6 @@
 }
 
 
-
 .insightsP {
     margin-top: -40px;
     color: rgba(0, 0, 0, 0.95);
@@ -86,7 +84,7 @@
     font-family: HarmonyOS Sans SC;
     font-size: 28px;
     font-weight: 250;
-    line-height: 56px;
+    line-height: 96px;
     letter-spacing: 0%;
     text-align: left;
     text-transform: capitalize;
@@ -210,8 +208,8 @@ border: 0.4px solid rgba(0, 0, 0, 0.5);
     }
 
     .insightsText h5 {
-        font-size: 14px;
-        margin-bottom: 20px;
+        font-size: 16px;
+        margin-bottom: 40px;
     }
 
     .insightsText {

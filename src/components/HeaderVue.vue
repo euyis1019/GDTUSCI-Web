@@ -24,11 +24,11 @@ function showCd(){
             <div class="nav">
                 <div class="logo" @click="$router.push('/home')"><img src="../assets/img/logo.jpg" alt="" srcset=""></div>
                 <div class="navList" v-show="!showCdFlag">
-                    <router-link to="/design" :class="{'aActive': route.name &&route.name.includes('design')}" active-class="aActive">DESIGN</router-link>
-                    <router-link to="/research" :class="{'aActive': route.name &&route.name.includes('research')}" active-class="aActive">RESEARCH</router-link>
-                    <router-link to="/creative" :class="{'aActive': route.name &&route.name.includes('creative')}" active-class="aActive">GDUT DESIGN</router-link>
-                    <router-link to="/dynamic" :class="{'aActive': route.name &&route.name.includes('dynamic')}" active-class="aActive">INSIGHTS</router-link>
-                    <router-link to="/about" :class="{'aActive': route.name &&route.name.includes('about')}" active-class="aActive">ABOUT</router-link>
+                    <router-link to="/design" :class="{'aActive': route.name && route.name.includes('design')}" active-class="aActive">DESIGN</router-link>
+                    <router-link to="/research" :class="{'aActive': route.name && route.name.includes('research')}" active-class="aActive">RESEARCH</router-link>
+                    <router-link to="/creative" :class="{'aActive': route.name && route.name.includes('creative')}" active-class="aActive">GDUT DESIGN</router-link>
+                    <router-link to="/dynamic" :class="{'aActive': route.name && route.name.includes('dynamic')}" active-class="aActive">INSIGHTS</router-link>
+                    <router-link to="/about" :class="{'aActive': route.name && route.name.includes('about')}" active-class="aActive">ABOUT</router-link>
                 </div>  
                 <div class="cd" @click="showCd">
                     <img :src="cdUrl" alt="" srcset="">
@@ -36,25 +36,26 @@ function showCd(){
             </div>
             <div class="navB" v-show="showCdFlag" :class="{ 'flex-layout': showCdFlag }">
                 <div class="navBItem">
-                    <span>WORk</span>
+                    <span>WORK</span>
                     <ul>
-                        <li><a href="">STRATEGY</a></li>
-                        <li><a href="">DESIGN</a></li>
-                        <li><a href="">CREATIVE <br> INDUSTRIES</a></li>
+                        <router-link to="/dynamic"><li>INSIGHTS</li></router-link>
+                        <router-link to="/design"><li>DESIGN</li></router-link>
+                        <router-link to="/creative"><li>CREATIVE</li></router-link>
+                        <router-link to="/research"><li>RESEARCH</li></router-link>
                     </ul>
                 </div>
                 <div class="navBItem">
                     <span>INSIGHTS</span>
                     <ul>
-                        <li><a href="">NEWS</a></li>
+                        <router-link to="/home"><li>NEWS</li></router-link>
                     </ul>
                 </div>
                 <div class="navBItem">
                     <span>ABOUT</span>
                     <ul>
-                        <li><a href="">INTRODUCE</a></li>
-                        <li><a href="">CONTACT</a></li>
-                        <li><a href="">JOIN US</a></li>
+                        <router-link to="/about"><li>INTRODUCE</li></router-link>
+                        <router-link to="/about"><li>CONTACT</li></router-link>
+                        <router-link to="/about"><li>JOIN US</li></router-link>
                     </ul>
                 </div>
             </div>
@@ -260,6 +261,21 @@ color: red !important;
             margin-bottom: 10px;
             line-height: 30px;
         }
+
+        .flex-layout {
+            display: flex;
+            flex-direction: column;
+
+            /* .navBItem居中 */
+            .navBItem{
+            justify-content: center;
+            align-items: center;
+
+            }
+
+        }
+         
+        
 
         /*  */
         footer{
