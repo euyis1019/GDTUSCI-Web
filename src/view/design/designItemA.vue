@@ -1,34 +1,32 @@
 <template>
-    <div class="banner"><img
-            src="./images/item1.jpg"
-            alt=""
-            srcset=""
-        ></div>
+    <div class="banner"><img src="./images/item1.jpg" alt="" srcset=""></div>
     <div class="con">
         <h3 class="titleH3">优利德品牌-产品-UI设计</h3>
         <div class="conText">
-            <p>作为体量级较高的上市公司,企业形象的视觉体系已然形成了一定的积累,因此我们聚焦于产品识别体系与视觉UI体系,提取优利德现有的品牌DNA特征,构建优利德家族式的产品外观视觉系统,提高迭代开发的效率,形成规范而美观的产品外观系统.通过产品"族群化"的设计来塑造鲜明的设计形象,使产品"族群"在整体上形成家族化的可感受的特征,让优利德的品牌精神得到集中的外显和表达.简而言之,就是通过设计产品识别系统的建立与导入,强化品牌形象,提高品牌传播力与加强差异化特征,实现品牌价值的最大化.</p>
-            <ul>
-                <li>品牌策略</li>
-                <li>视觉识别</li>
-                <li>品牌设计</li>
-                <li>产品设计</li>
-                <li>UI设计</li>
-            </ul>
+            <Row :gutter="16">
+                <Col :span="14">
+                <p>体量级较高的上市公司，企业形象的视觉体系已然形成了一定的积累，因此我们聚焦于产品识别体系与视觉UI体系，提取优利德现有的品牌DNA特征，构建优利德家族式的产品外观视觉系统，提高迭代开发的效率，形成规范而美观的产品外观系统。通过产品“族群化”的设计来塑造鲜明的设计形象，使产品“族群”在整体上形成家族化的可感受的特征，让优利德的品牌精神得到集中的外显和表达。简而言之，就是通过设计产品识别系统的建立与导入，强化品牌形象，提高品牌传播力与加强差异化特征，实现品牌价值的最大化。
+                </p>
+                </Col>
+                <Col :span="6" :offset="4">
+                <ul>
+                    <li>品牌策略</li>
+                    <li>视觉识别</li>
+                    <li>品牌设计</li>
+                    <li>产品设计</li>
+                    <li>UI设计</li>
+                </ul>
+                </Col>
+            </Row>
         </div>
-
     </div>
-    <div class="bannerB"><img
-            src="./images/banner1.png"
-            alt=""
-            srcset=""
-        ></div>
+    <div class="bannerB"><img src="./images/banner1.png" alt="" srcset=""></div>
 
     <div class="titleMax">
         <div class="titleMaxA">
             <div>
                 <h4>策略</h4>
-                <p>strategy</p>
+                <p>STRATEGY</p>
             </div>
         </div>
         <div class="titleMaxB">
@@ -37,45 +35,30 @@
         </div>
     </div>
 
-    <div class="bannerC"><img
-            src="./images/banner2.png"
-            alt=""
-            srcset=""
-        ></div>
+    <div class="bannerC"><img src="./images/banner2.png" alt="" srcset=""></div>
     <div class="titleMax">
         <div class="titleMaxA">
             <div>
                 <h4>趋势分析</h4>
-                <p>Trend<br> analysis</p>
+                <p>TREND ANALYSIS</p>
             </div>
         </div>
         <div class="titleMaxB">
-            <p>我们调研了大量的同行及跨行业产品,分析了仪器产品的设计趋势,制定了系列仪器的设计策略并进行设计.同时,我们从不同行业屏幕类设备中分析及提取设计趋势,对正面造型进行简化设计,突出产品"大屏"元素,优化了产品视觉效果及交互体验,符合设计趋势.</p>
+            <p>我们调研了大量的同行及跨行业产品,分析了仪器产品的设计趋势,制定了系列仪器的设计策略并进行设计.同时,我们从不同行业屏幕类设备中分析及提取设计趋势,对正面造型进行简化设计,突出产品"大屏"元素,优化了产品视觉效果及交互体验,符合设计趋势.
+            </p>
         </div>
     </div>
 
-    <div class="bannerD"><img
-            src="./images/banner3.png"
-            alt=""
-            srcset=""
-        ></div>
+    <div class="bannerD"><img src="./images/banner3.png" alt="" srcset=""></div>
     <div class="bannerTwo">
-        <div><img
-                src="./images/bannerL.png"
-                alt=""
-                srcset=""
-            ></div>
-        <div><img
-                src="./images/bannerR.png"
-                alt=""
-                srcset=""
-            ></div>
+        <div><img src="./images/bannerL.png" alt="" srcset=""></div>
+        <div><img src="./images/bannerR.png" alt="" srcset=""></div>
     </div>
     <div class="titleMax">
         <div class="titleMaxA">
             <div>
                 <h4>品牌设计</h4>
-                <p>brand design</p>
+                <p>BRAND DESIGN</p>
             </div>
         </div>
         <div class="titleMaxB">
@@ -84,72 +67,41 @@
     </div>
 
     <div class="bannerE">
-        <img
-            src="./images/banner4.png"
-            alt=""
-            srcset=""
-        >
+        <img src="./images/详情图6.png" alt="" srcset="">
     </div>
     <div class="titleMax">
         <div class="titleMaxA">
             <div>
                 <h4>产品设计</h4>
-                <p>product design</p>
+                <p>PRODUCT DESIGN</p>
             </div>
         </div>
         <div class="titleMaxB">
-            <p>根据系列产品的不同结构特征,我们还对不同型号的产品进行了系列衍生设计.对于传统的桌面仪器,我们采用了更加立体的展品造型,以减轻产品体积过大带来的厚重感,而对于新一代的便携型仪器,我们在保留产品家族语言的前提下,采用了轻薄化的设计,同时对产品的使用做了新的考究.</p>
+            <p>根据系列产品的不同结构特征,我们还对不同型号的产品进行了系列衍生设计.对于传统的桌面仪器,我们采用了更加立体的展品造型,以减轻产品体积过大带来的厚重感,而对于新一代的便携型仪器,我们在保留产品家族语言的前提下,采用了轻薄化的设计,同时对产品的使用做了新的考究.
+            </p>
         </div>
     </div>
-    <div class="bannerF"><img
-            src="./images/banner5.png"
-            alt=""
-            srcset=""
-        ></div>
-    <div class="bannerF"><img
-            src="./images/banner6.png"
-            alt=""
-            srcset=""
-        ></div>
+    <!-- <div class="bannerF"><img src="./images/banner5.png" alt="" srcset=""></div>
+    <div class="bannerF"><img src="./images/banner6.png" alt="" srcset=""></div> -->
 
     <div class="banenrGird">
-        <div><img
-                src="./images/banner7.png"
-                alt=""
-                srcset=""
-            ></div>
-        <div><img
-                src="./images/banner8.png"
-                alt=""
-                srcset=""
-            ></div>
-        <div><img
-                src="./images/banner9.png"
-                alt=""
-                srcset=""
-            ></div>
-        <div><img
-                src="./images/banner10.png"
-                alt=""
-                srcset=""
-            ></div>
+        <div><img src="./images/详情图7.png" alt="" srcset=""></div>
+        <div><img src="./images/详情图8.png" alt="" srcset=""></div>
+        <div><img src="./images/详情图9.png" alt="" srcset=""></div>
+        <div><img src="./images/详情图10.png" alt="" srcset=""></div>
     </div>
 
-    <div class="bannerB"><img
-            src="./images/banner11.png"
-            alt=""
-            srcset=""
-        ></div>
-    <div class="bannerG"><img
-            src="./images/banner12.png"
-            alt=""
-            srcset=""
-        ></div>
-    <div class="titleMax">
+    <div class="bannerG"><img src="./images/详情图11.png" alt="" srcset=""></div>
+    <div class="bannerG"><img src="./images/详情图12.png" alt="" srcset=""></div>
+    <div class="bannerG"><img src="./images/详情图13.png" alt="" srcset=""></div>
+    <div class="bannerG bt-200"><img src="./images/详情图14.png" alt="" srcset=""></div>
+    <div class="bannerG"><img src="./images/banner11.png" alt="" srcset=""></div>
+    <div class="bannerG"><img src="./images/banner12.png" alt="" srcset=""></div>
+    <div class="titleMax" style="margin-bottom: 100px;">
         <div class="titleMaxA">
             <div>
                 <h4>界面设计</h4>
-                <p>interface design</p>
+                <p>INTERFACE DESIGN</p>
             </div>
         </div>
         <div class="titleMaxB">
@@ -160,8 +112,8 @@
     </div>
 </template>
 
-<script setup>
-
+<script setup lang="ts">
+import { Row, Col } from 'ant-design-vue'
 </script>
 
 <style scoped>
@@ -172,6 +124,8 @@
 
 .banner img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     max-height: 1080px;
 }
 
@@ -180,10 +134,13 @@
     margin: auto;
     width: 80%;
 }
+
 .titleH3 {
     font-size: 64px;
-    font-family: "Regular";
-    margin: 48px 0;
+    line-height: 64px;
+    font-family: "Light";
+    margin: 48px auto 100px;
+    color: rgba(0, 0, 0, 0.95);
     font-weight: 300;
 }
 
@@ -194,10 +151,11 @@
 }
 
 .conText p {
-    width: 788px;
+    /* width: 788px; */
     font-size: 14px;
     font-family: "Light";
-    line-height: 25px;
+    line-height: 25.2px;
+    color: rgba(0, 0, 0, 0.65);
 }
 
 .conText ul {
@@ -211,9 +169,15 @@
 }
 
 .conText ul li {
-    font-family: "Bold";
+    font-family: "Regular";
+    line-height: 14px;
     color: rgba(0, 0, 0, 0.3);
     font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.conText ul li:nth-last-child(1) {
+    margin-bottom: 0px;
 }
 
 .bannerB {
@@ -235,6 +199,7 @@
     width: 100%;
     max-height: 810px;
 }
+
 .bannerD {
     max-width: 1370px;
     width: 80%;
@@ -251,17 +216,19 @@
     width: 80%;
     margin: 24px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(623px, 1fr));
+    grid-template-columns: repeat(2, auto);
     gap: 24px;
 }
 
-.bannerTwo > div {
+.bannerTwo>div {
     max-height: 415px;
 }
-.bannerTwo > div img {
+
+.bannerTwo>div img {
     width: 100%;
     height: 415px;
 }
+
 .bannerE {
     width: 100%;
 }
@@ -294,6 +261,7 @@
     width: 100%;
     max-height: 723px;
 }
+
 /*  */
 
 .titleMax {
@@ -302,32 +270,48 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 48px 8% 100px;
+    padding: 50px 6% 200px 12%;
     box-sizing: border-box;
 }
 
 .titleMaxA h4 {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 16px;
     font-family: "Regular";
+    color: rgba(0, 0, 0, 0.95);
+    margin-bottom: 6px;
 }
 
 .titleMaxA p {
-    font-family: "Light";
+    line-height: 14px;
     font-size: 14px;
+    font-family: "Light";
     color: rgba(0, 0, 0, 0.3);
 }
 
 .titleMaxB {
+    position: relative;
     width: 672px;
     padding-left: 30px;
-    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    /* border-left: 1px solid rgba(0, 0, 0, 0.5); */
+}
+
+.titleMaxB::before{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: calc(100% - 11px);
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 0;
+    transform: translate(0px, -50%);
 }
 
 .titleMaxB p {
     font-size: 14px;
-    line-height: 25px;
-    text-align: 2rem;
+    line-height: 25.2px;
+    text-indent: 2rem;
+    color: rgba(0, 0, 0, 0.65);
     font-family: "Light";
 }
 
@@ -335,9 +319,9 @@
 .banenrGird {
     max-width: 1370px;
     width: 80%;
-    margin: 0 auto 100px;
+    margin: 0 auto 200px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(660px, 1fr));
+    grid-template-columns: repeat(2, auto);
     gap: 20px;
 }
 
@@ -345,19 +329,35 @@
     width: 100%;
     max-height: 380px;
 }
+
+img {
+    display: block;
+}
+
+.bt-200 {
+    margin-bottom: 200px;
+}
 </style>
 
 
 <style scoped>
 @media screen and (max-width: 500px) {
     .titleH3 {
-        font-size: 25px;
-        margin: 30px 0;
+        font-size: 20px;
+        line-height: 20px;
+        margin: 12px 0 64px;
+        display: block
     }
 
     .conText {
         flex-direction: column;
         padding-bottom: 50px;
+        display: none
+    }
+
+    .bannerB {
+        width: 100%;
+        margin: 4px 0px;
     }
 
     .conText p {
@@ -378,10 +378,36 @@
         width: 100%;
         flex-direction: column;
         font-size: 12px;
+        padding: 0px 30px;
+        margin-bottom: 64px;
     }
 
     .titleMaxA {
-        text-align: center;
+        text-align: start;
+        margin-top: 16px;
+    }
+
+    .titleMaxA h4 {
+        margin-bottom: 0px;
+        margin-right: 4px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .titleMaxA p {
+        font-size: 11px;
+        line-height: 11px;
+    }
+
+    .titleMaxB p {
+        font-size: 10px;
+        line-height: 20px;
+        text-indent: 0;
+    }
+
+    .titleMaxA>div {
+        display: flex;
+        align-items: center;
     }
 
     .titleMaxB {
@@ -390,20 +416,49 @@
         border: none;
         margin-top: 20px;
     }
+
     /*  */
 
     .bannerTwo {
         grid-template-columns: repeat(1, 1fr);
     }
-    .bannerTwo > div img {
+
+    .bannerTwo>div img {
         height: auto;
     }
+
     .bannerTwo img {
         height: auto;
     }
 
     .banenrGird {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bannerD {
+        width: 100%;
+        margin: 4px 0px;
+    }
+
+    .bannerTwo {
+        width: 100%;
+        margin: 4px 0px;
+        gap: 4px;
+    }
+
+    .banenrGird {
+        width: 100%;
+        margin: 4px 0px;
+        gap: 4px;
+    }
+
+    .bannerG {
+        width: 100%;
+        margin: 4px 0px;
+    }
+
+    .bt-200 {
+        margin-bottom: 24px;
     }
 }
 </style>

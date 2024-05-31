@@ -54,7 +54,7 @@
     </div>
 
     <div class="bannerE"><img src="./images/bn16.png" alt="" srcset=""></div>
-    <div class="bannerE" style="margin-bottom: 160px;"><img src="./images/bn17.png" alt="" srcset=""></div>
+    <div class="bannerE" style="margin-bottom: 276px;"><img src="./images/bn17.png" alt="" srcset=""></div>
 
 </template>
 
@@ -154,7 +154,7 @@ export default {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 50px 8% 100px;
+    padding: 50px 8% 200px;
     box-sizing: border-box;
 }
 

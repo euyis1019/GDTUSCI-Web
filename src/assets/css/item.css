@@ -1,12 +1,8 @@
-
-
 .insightsImg img:hover,
 .insightsText:hover+.insightsImg img {
     transform: scale(1.1);
     transition: all 0.3s linear;
 }
-
-
 
 .designTitle {
     width: 80%;
@@ -17,13 +13,18 @@
 
 .designTitle h2 {
     font-size: 64px;
+    line-height: 64px;
     font-family: "Light";
+    margin-bottom: 16px;
 }
 
 .designTitle h4 {
     font-size: 48px;
+    line-height: 48px;
     font-weight: 300;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+    font-family: "Thin";
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .designTitle p {
@@ -59,21 +60,45 @@
 
 /* 当 .insightsText 被悬停时, h5 和 p 元素应用高亮样式 */
 
+.text-with-background {
+    background-image: linear-gradient(#ffdcdc, #ffdcdc);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 16px; /* 设置背景宽度100%，高度50% */
+    -webkit-background-size: 100% 16px; /* 兼容Webkit内核浏览器 */
+    -moz-background-size: 100% 16px; /* 兼容Mozilla Firefox浏览器 */
+    -o-background-size: 100% 16px; /* 兼容Opera浏览器 */
+    display: inline; /* 使元素具有块特性但不产生换行 */
+    padding: 0 10px; /* 设置文字的水平填充，以便背景颜色可以完全展示 */
+    line-height: 50px; /* 设置行高以适应背景高度 */
+    font-size: 20px; /* 设置文字大小 */
+  }
+
 .insightsText h5,
 .insightsText p {
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
+    /* background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#ffdcdc, #ffdcdc);
     background-size: 100% calc(2.4em + 1px);
     background-position: 100% 100%, 100% 100%;
     background-repeat: repeat-y;
+    transition: background-size 0.3s linear; */
+    /* background-image: linear-gradient(#ffdcdc, #ffdcdc); */
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 0% 16px, 100% 16px;
     transition: background-size 0.3s linear;
-
+    display: inline;
+    /* display: block; */
+    /* padding: 0 10px;
+    line-height: 50px;
+    font-size: 20px; */
 }
-
 
 
 .insightsText:hover h5,
 .insightsText:hover p {
-    background-size: 0 15px, 100% 15px;
+    /* background-size: 0 16px, 100% 16px; */
+    /* background-size: 0 15px, 100% 15px; */
+    background-size: 100% 16px, 100% 16px;
 }
 
 
@@ -127,11 +152,11 @@
 }
 
 .division-line {
-width: 1370px;
-margin-top: 20px;
-margin-bottom: 20px;
-left: 274px;
-border: 0.4px solid rgba(0, 0, 0, 0.5);
+    width: 1370px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 274px;
+    border: 0.4px solid rgba(0, 0, 0, 0.5);
 }
 
 
@@ -162,7 +187,7 @@ border: 0.4px solid rgba(0, 0, 0, 0.5);
     margin: 60px 0 150px;
 }
 
-.productBtn>span {
+/* .productBtn>span {
     display: block;
     width: 20px;
     height: 20px;
@@ -172,7 +197,7 @@ border: 0.4px solid rgba(0, 0, 0, 0.5);
 
 .productBtn>.productSpan {
     background-color: #b40000;
-}
+} */
 
 @media screen and (max-width: 500px) {
     .productBtn>span {
@@ -238,4 +263,3 @@ border: 0.4px solid rgba(0, 0, 0, 0.5);
         padding: 30px 0;
     }
 }
-

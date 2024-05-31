@@ -5,15 +5,15 @@ import Footer from './components/FooterVue.vue'
 
 <template>
   <div class="box">
-    <Header/>
-    <router-view/>
-    <Footer/>
-   
+    <Header />
+    <router-view />
+    <Footer />
+
   </div>
 </template>
 
 
-   
+
 <style>
 @font-face {
   font-family: 'HarmonyOS_Sans_SC';
@@ -45,7 +45,12 @@ import Footer from './components/FooterVue.vue'
   src: url('./assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.ttf') format('truetype');
 }
 
+html {
+  background-color: black;
+}
+
 body {
+  background-color: #fff;
   font-family: 'HarmonyOS_Sans_SC';
 }
 

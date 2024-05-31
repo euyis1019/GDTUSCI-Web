@@ -22,42 +22,14 @@ function showCd(){
 <template>
         <header>
             <div class="nav">
-                <div class="logo" @click="$router.push('/home')"><img src="../assets/img/logo.jpg" alt="" srcset=""></div>
+                <div class="logo" @click="$router.push('/home')"><img src="../assets/img/sciid.jpg" alt="" srcset=""></div>
                 <div class="navList" v-show="!showCdFlag">
-                    <router-link to="/design" :class="{'aActive': route.name && route.name.includes('design')}" active-class="aActive">DESIGN</router-link>
-                    <router-link to="/research" :class="{'aActive': route.name && route.name.includes('research')}" active-class="aActive">RESEARCH</router-link>
-                    <router-link to="/creative" :class="{'aActive': route.name && route.name.includes('creative')}" active-class="aActive">GDUT DESIGN</router-link>
-                    <router-link to="/dynamic" :class="{'aActive': route.name && route.name.includes('dynamic')}" active-class="aActive">INSIGHTS</router-link>
-                    <router-link to="/about" :class="{'aActive': route.name && route.name.includes('about')}" active-class="aActive">ABOUT</router-link>
+                    <router-link to="/design" :class="{'aActive': route.name && route.name.includes('design')}" active-class="aActive">DESIGN/设计</router-link>
+                    <router-link to="/research" :class="{'aActive': route.name && route.name.includes('research')}" active-class="aActive">RESEARCH/研究</router-link>
+                    <router-link to="/creative" :class="{'aActive': route.name && route.name.includes('creative')}" active-class="aActive">GDUT DESIGN/广工文创</router-link>
+                    <router-link to="/dynamic" :class="{'aActive': route.name && route.name.includes('dynamic')}" active-class="aActive">NEWS/动态</router-link>
+                    <router-link to="/about" :class="{'aActive': route.name && route.name.includes('about')}" active-class="aActive">ABOUT/关于我们</router-link>
                 </div>  
-                <div class="cd" @click="showCd">
-                    <img :src="cdUrl" alt="" srcset="">
-                </div>
-            </div>
-            <div class="navB" v-show="showCdFlag" :class="{ 'flex-layout': showCdFlag }">
-                <div class="navBItem">
-                    <span>WORK</span>
-                    <ul>
-                        <router-link to="/dynamic"><li>INSIGHTS</li></router-link>
-                        <router-link to="/design"><li>DESIGN</li></router-link>
-                        <router-link to="/creative"><li>CREATIVE</li></router-link>
-                        <router-link to="/research"><li>RESEARCH</li></router-link>
-                    </ul>
-                </div>
-                <div class="navBItem">
-                    <span>INSIGHTS</span>
-                    <ul>
-                        <router-link to="/home"><li>NEWS</li></router-link>
-                    </ul>
-                </div>
-                <div class="navBItem">
-                    <span>ABOUT</span>
-                    <ul>
-                        <router-link to="/about"><li>INTRODUCE</li></router-link>
-                        <router-link to="/about"><li>CONTACT</li></router-link>
-                        <router-link to="/about"><li>JOIN US</li></router-link>
-                    </ul>
-                </div>
             </div>
         </header>
 </template>
@@ -119,14 +91,14 @@ color: red !important;
         }
        
         .logo{
-            width: 49px;
+            width: 100px;
             height: 49px;
             cursor: pointer;
 
         }
 
         .navList{
-            width: 500px;
+            width: 800px;
             height: 30px;
             display: flex;
             justify-content: space-between;
@@ -232,8 +204,8 @@ color: red !important;
             height: 56px;
         }
         .logo{
-            width: 24px;
-            height: 24px;
+            /* width: 24px; */
+            height: 20px;
         }
         .cd{
             width: 20px;

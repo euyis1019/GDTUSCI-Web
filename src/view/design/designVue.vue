@@ -1,8 +1,8 @@
 <template>
     <div class="designTitle">
         <h2>设计</h2>
-        <h4>Design</h4>
-        <p>我们为企业创造富有凝聚力的品牌形象,帮助品牌与用户更好地连接,帮助品牌实现目标与价值.</p>
+        <h4>DESIGN</h4>
+        <p>我们为企业提供富有创新性的设计策略、品牌及产品设计,帮助品牌与用户更好地连接,帮助企业实现目标与价值。</p>
     </div>
 
     <div class="product">
@@ -51,11 +51,14 @@
             </div>
 
         </div>
-        <div class="productBtn">
+        <!-- <div class="productBtn">
             <span class="productSpan"></span>
             <span></span>
             <span></span>
-        </div>
+     </div> -->
+        <!-- <div class="productBtn">
+            <span class="productSpan"></span>
+        </div>  -->
     </div>
 
 </template>
@@ -91,6 +94,7 @@ function changeTextColor(event, isHover) {
     background-repeat: no-repeat;
     transition: background-size 0.3s linear;
 }
+
 .product-img-box {
     overflow: hidden;
     height: 440px;
@@ -104,14 +108,20 @@ function changeTextColor(event, isHover) {
 }
 
 .designTitle h2 {
+    margin-bottom: 16px;
     font-size: 64px;
+    line-height: 64px;
     font-family: "Light";
+    color: rgba(0, 0, 0, 0.95);
 }
 
 .designTitle h4 {
+    color: rgba(0, 0, 0, 0.30);
     font-size: 48px;
+    /* font-family: "HarmonyOS Sans SC Light"; */
+    line-height: 48px;
     font-weight: 300;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .designTitle p {
@@ -124,14 +134,14 @@ function changeTextColor(event, isHover) {
 /*  */
 .product {
     max-width: 1368px;
-    margin: 0 auto 100px;
+    margin: 0 auto 300px;
 }
 
 .productItem>div {
-    height: 550px;
+    /* height: 550px; */
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 68px;
     overflow: hidden;
 }
 
@@ -155,24 +165,29 @@ function changeTextColor(event, isHover) {
     transform: scale(1.1);
 }
 
+.proText {
+    /* margin-top: 56px; */
+}
+
 .proText p {
     font-size: 16px;
     line-height: 16px;
-    color: rgba(0, 0, 0, 0.3);
-    margin: 20px 0;
-    font-family: "Light";
+    color: rgba(0, 0, 0, 0.30);
+    margin: 12px auto 8px;
+    font-family: "HarmonyOS Sans SC Light";
+
 }
 
 .proText h3 {
-    color: rgba(0, 0, 0, 0.65);
-    font-family: HarmonyOS Sans SC;
+    color: rgba(0, 0, 0, 0.80);
+    font-family: HarmonyOS Sans SC Light;
     font-size: 32px;
     font-weight: 300;
-    line-height: 32px;
+    line-height: 46px;
     letter-spacing: 0%;
     display: inline;
     text-decoration: none;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#FDF322, #FDF322);
+    /* background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#ffdcdc, #ffdcdc); */
     background-size: 100% 15px, 0 15px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
@@ -181,6 +196,7 @@ function changeTextColor(event, isHover) {
 
 .proText h3:hover {
     background-size: 0 15px, 100% 15px;
+    border-bottom: 1px solid #b40000;
 }
 
 .productBtn {
@@ -196,7 +212,15 @@ function changeTextColor(event, isHover) {
     width: 20px;
     height: 20px;
     margin: 0 10px;
-    background-color: #7d7d7d;
+    background-color: #ffffff !important;
+}
+
+.productBtn>.productSpan {
+    background-image: url('../research/images/加载图标.gif');
+    background-size: cover; /* 或者使用其他适当的尺寸 */
+    display: inline-block; /* 确保元素显示为块级元素 */
+    width: 300px; /* 设置元素的宽度 */
+    height: 100px; /* 设置元素的高度 */
 }
 
 .productBtn>.productSpan {
@@ -205,7 +229,7 @@ function changeTextColor(event, isHover) {
 
 @media screen and (max-width: 1200px) {
     .product {
-        width: 80%;
+        /* width: 80%; */
         margin: auto;
     }
 }
@@ -222,11 +246,11 @@ function changeTextColor(event, isHover) {
     }
 
     .productBtn {
-        margin-top: 20px;
+        margin-top: -30px;
     }
 
     .product {
-        margin: 0px auto 60px;
+        margin: 0px auto 100px;
     }
 
     .productItem>div {
@@ -248,39 +272,57 @@ function changeTextColor(event, isHover) {
         height: auto;
     }
 
+    .product-img-box {
+        height: auto;
+    }
+
+    .proText {
+        margin-top: 0px;
+        padding: 0px 30px;
+    }
+
     .proText p {
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 10px;
+        line-height: 10px;
         color: rgba(0, 0, 0, 0.3);
-        margin: 10px 0;
+        margin: 8px 0 4px 0;
         font-family: "Light";
     }
 
     .proText h3 {
-        font-size: 23px;
-        line-height: 32px;
-        color: rgba(0, 0, 0, 0.65);
+        font-size: 20px;
+        line-height: 20px;
+        color: rgba(0, 0, 0, 0.8);
         font-family: "Light";
         font-weight: 300;
-        margin-bottom: 40px;
+        margin-bottom: 42px;
+        display: block;
     }
 
     .designTitle p {
         width: auto;
+        font-size: 13px;
+        line-height: 26px;
+        color: rgba(0, 0, 0, 0.65);
+        margin-bottom: 60px
     }
 
     .designTitle h2 {
         font-size: 40px;
-        margin-bottom: 10px;
+        line-height: 40px;
+        margin-bottom: 12px;
+        margin-top: 64px;
     }
 
     .designTitle h4 {
-        font-size: 32px;
+        font-size: 20px;
+        line-height: 20px;
         margin-bottom: 20px;
+        font-family: 'Light';
     }
 
     .designTitle {
-        padding: 30px 0;
+        padding: 0px;
     }
 }
 </style>
