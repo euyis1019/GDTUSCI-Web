@@ -70,7 +70,7 @@ color: red !important;
         }
         header{
             width: 100%;
-            height: 88px;
+            height: 70px;
             background: #000000;
             position: relative;
         }
@@ -91,8 +91,8 @@ color: red !important;
         }
        
         .logo{
-            width: 100px;
-            height: 49px;
+            width: 78px;
+            height: 29px;
             cursor: pointer;
 
         }
