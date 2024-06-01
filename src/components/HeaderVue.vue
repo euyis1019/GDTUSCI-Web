@@ -22,7 +22,7 @@ function showCd(){
 <template>
         <header>
             <div class="nav">
-                <div class="logo" @click="$router.push('/home')"><img src="../assets/img/sciid.jpg" alt="" srcset=""></div>
+                <div class="logo" @click="$router.push('/home')"><img src="../assets/img/sciid.svg" alt="" srcset=""></div>
                 <div class="navList" v-show="!showCdFlag">
                     <router-link to="/design" :class="{'aActive': route.name && route.name.includes('design')}" active-class="aActive">DESIGN/设计</router-link>
                     <router-link to="/research" :class="{'aActive': route.name && route.name.includes('research')}" active-class="aActive">RESEARCH/研究</router-link>
