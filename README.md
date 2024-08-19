@@ -1,7 +1,6 @@
-<img width="1432" alt="image" src="https://github.com/user-attachments/assets/1097911b-7f6b-413f-b5fe-2d788ca48e42"># Guangdong South China Industrial Design Institute Official Website 广东华南工业设计院官方网站
 
 This is a static official website created for the Guangdong South China Industrial Design Institute. The website aims to showcase the institute's overview, services, project cases, and contact information.
-**Now is Available in https://www.gdsciid.com/**
+**Now It is Available at https://www.gdsciid.com/**
 <img width="1432" alt="image" src="https://github.com/user-attachments/assets/f78c6020-a7c8-421a-9e42-445850bb22a3">
 
 
